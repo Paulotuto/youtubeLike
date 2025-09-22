@@ -1,0 +1,23 @@
+:root {
+  --bg: #F8FAFC;
+  --text: #0F172A;
+  --primary: #2A9D8F;
+  --secondary: #E76F51;
+  --accent: #7CB3FF;
+}
+
+.dark {
+  --bg: #0B1014;
+  --text: #E6E9EF;
+  --primary: #2FB3A4;
+  --secondary: #F2846B;
+  --accent: #8AB4F8;
+}
+
+@theme {
+  --color-bg: var(--bg);
+  --color-text: var(--text);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+}
