@@ -13,4 +13,13 @@ export class UsersService {
   findAll(): Promise<User[]> {
     return this.userRepository.find();
   }
+
+  findByEmail(email: string) {
+    return this.userRepository.findOne({ where: { email } });
+  }
+
+  createUser(email: string, password: string) {
+    const user = this.userRepository.create({ email, password });
+    return this.userRepository.save(user);
+  }
 }
